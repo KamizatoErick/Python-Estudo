@@ -21,3 +21,8 @@ print(len(frase)) # mostra total de caracteres
 print(frase.count('o')) # conta quantas vezes aparece a letra 'o'
 print(frase.count('o',0,13)) # conta com fatiamento 0 até 13, excluindo o 13
 print(frase.find('deo')) # quantas vezes encontrou 'deo', exibe a posição que começou
+print(frase.find('Android')) # quando a frase não existir, retorna -1
+
+if('Curso' in frase): #verifica se existe a palavra 'Curso' na frase
+    print('Existe')
+
