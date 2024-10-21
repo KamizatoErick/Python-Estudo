@@ -1,5 +1,6 @@
-from pathlib import Path
+import pygame
+pygame.init()
 
-p = Path('C:\Users\ErickScilo\Desktop\scripts-python\aula 8\setup.py')
-with p.open() as f:
-    f.readline()
+pygame.mixer.music.load('aula 8\desafio21.mp3')
+pygame.mixer.music.play()
+pygame.event.wait()
