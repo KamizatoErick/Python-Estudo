@@ -44,3 +44,6 @@ frase3 = frase.split()
 
 #Junção
 print('-'.join(frase3)) # faz a junção e com o separador '-'
+
+# Usando transformação e análise
+print(frase.lower().find('video')) # transforma a frase em minusculo, e mostra em qual posicao esta a palavra 'video'
