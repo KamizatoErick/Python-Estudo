@@ -26,3 +26,21 @@ print(frase.find('Android')) # quando a frase não existir, retorna -1
 if('Curso' in frase): #verifica se existe a palavra 'Curso' na frase
     print('Existe')
 
+#Transformação
+print(frase.replace('Python','Android')) # troca a palavra 'Python' por 'Android'
+print(frase.upper()) # transforma em maiúsculo
+print(frase.lower()) # transforma em minúsculo
+print(frase.capitalize()) # tudo em minúsculo, e a primeira letra pra maiúsculo
+print(frase.title()) # poe maiúsculo todo começo de frase
+
+frase2 = '   Aprenda Python  '
+print(frase2.strip()) # remove espaços inúteis, começo e final
+print(frase2.rstrip()) # remove espaço da direita
+print(frase2.lstrip()) # remove espaço da esquerda
+
+#Divisão
+print(frase.split()) # faz uma divisão aonde tem espaço
+frase3 = frase.split()
+
+#Junção
+print('-'.join(frase3)) # faz a junção e com o separador '-'
