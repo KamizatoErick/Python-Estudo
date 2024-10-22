@@ -7,7 +7,7 @@ print('\n')
 # [x:y:z]
 # x começo, y final, z pula caracteres 
 
-print(frase[2])
+print(frase[2]) # imprime a segunda 3 letra
 print(frase[2:13]) # 2 até o 13, excluindo o 13
 print(frase[9:21]) #imprime 'Video Python'
 print(frase[9:21:2]) #pulando de 2 em 2
