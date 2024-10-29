@@ -3,10 +3,8 @@
 # Em que posição ela aparece a primeira vez
 # Em que posição ela aparece a última vez
 
-frase = input('Digite uma frase: ')
-frase = frase.upper()
+frase = str(input('Digite uma frase: ')).strip().upper()
 
 print('A letra "a" aparece na frase {} vezes.'.format(frase.count('A')))
-print('A letra "a" aparece primeira vez na posição {}'.format(frase.find("A")))
-
-# Falta fazer a última posição
+print('A letra "a" aparece primeira vez na posição {}'.format(frase.find('A')+1))
+print('A última letra "a" aparece na posição {}'.format(frase.rfind('A')+1)) # procura a partir do lado direito
