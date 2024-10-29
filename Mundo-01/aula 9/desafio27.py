@@ -11,5 +11,3 @@ ultimoNome = nome[len(nome)-1]
 
 print(primeiroNome)
 print(ultimoNome)
-
-# Falta fazer o último nome
