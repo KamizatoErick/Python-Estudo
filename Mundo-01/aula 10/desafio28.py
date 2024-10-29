@@ -4,11 +4,18 @@
 # O programa deverá escrever na tela se o usuário venceu ou perdeu.
 
 import random
+import time
 
-nAleatorio = random.choice([0,1,2,3,4,5])
+nAleatorio = random.randint(1, 5) # Faz o computador "Pensar"
+
+print('-='*29)
+print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
+print('-='*29)
 
 while True:
-    numero = int(input('Pensei em um número de 0 a 5, tente descobrir: '))
+    numero = int(input('Em que número eu pensei? '))
+    print('PROCESSANDO...\n')
+    time.sleep(2)
     
     if numero == nAleatorio:
         print('Parabéns, você acertou :)')
