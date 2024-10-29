@@ -9,5 +9,5 @@ if km > 80:
     print('Você foi multado!')
     print('Você está a {}km/h acima do limite 80km/h.'.format(km-80))
     print('O valor da multa é R${}'.format(valorMulta))
-else:
-    print('Continue dirigindo com segurança :)')
+
+print('\nTenha um bom dia! Dirige com segurança')
