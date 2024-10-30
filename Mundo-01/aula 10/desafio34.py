@@ -7,8 +7,8 @@ salario = float(input('Inform o salario atual: R$'))
 
 if salario > 1250.00:
     novoSalario = salario + (salario*0.10)
-    print('Seu novo salário é de R${}'.format(novoSalario))
 
 else:
     novoSalario = salario + (salario*0.15)
-    print('Seu novo salário é de R${}'.format(novoSalario))
+
+print('Quem ganhava {:.2f}, passa a ganhar R${:.2f}'.format(salario, novoSalario))
