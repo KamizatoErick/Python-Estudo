@@ -9,13 +9,13 @@ r2 = float(input('Digite o segundo comprimento: '))
 r3 = float(input('Digite o terceiro comprimento: '))
 
 if (r1+r2) > r3 and (r2+r3) > r1 and (r1+r3) > r2:
-    print('É possível formar um triangulo!')
+    print('É possível formar um triangulo ',end='')
 else:
     print('Não é possível formar um triangulo')
 
 if r1 == r2 == r3:
-    print('É Equilátero!')
+    print('Equilátero!')
 elif r1 == r2 or r2 == r3 or r3 == r1:
-    print('É Isósceles!')
+    print('Isósceles!')
 else:
-    print('É escaleno!')
+    print('escaleno!')

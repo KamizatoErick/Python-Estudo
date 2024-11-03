@@ -9,7 +9,7 @@
 valorProduto = float(input('Digite o valor do produto R$'))
 
 print('=-'*20)
-print('0 - Dinheiro\n1 - Cartão')
+print('[0] - Dinheiro\n[1] - Cartão')
 formaPagamento = int(input('Forma de pagamento: '))
 print('=-'*20)
 
