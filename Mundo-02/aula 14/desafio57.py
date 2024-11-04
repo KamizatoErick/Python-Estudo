@@ -11,4 +11,4 @@ while n != 0:
     else:
         print('Sexo inexistente, tente novamente.\n')
 
-print('Obrigado.')
+print('Sexo {} registrado com sucesso.'.format(sexo))
