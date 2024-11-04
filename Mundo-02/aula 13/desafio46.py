@@ -5,8 +5,8 @@
 import time
 import emoji #documentação https://pypi.org/project/emoji/
 
-for c in range(1,11):
+for c in range(10,-1,-1):
     print(c)
-    time.sleep(1)
+    time.sleep(0.5)
 
 print(emoji.emojize(":fireworks::sparkler:"))

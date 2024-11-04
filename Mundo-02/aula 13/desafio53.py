@@ -6,7 +6,7 @@
 # Ex: O LOBO AMA O BOLO
 # Ex: ANOTARAM A DATA DA MARATONA
 
-frase = str(input('Digite uma frase: ')).replace(" ","")
+frase = str(input('Digite uma frase: ')).replace(" ","").upper()
 tamanhoFrase = len(frase)
 
 for c in range(0,tamanhoFrase):

@@ -18,9 +18,9 @@ print('\n')
 
 for c in range (0,6):
     if num[c] % 2 == 0:
-        time.sleep(1)
+        time.sleep(0.5)
         print('somando o numero {}...'.format(num[c]))
         s += num[c]
 
-time.sleep(1)
+time.sleep(0.5)
 print('O resultado final ficou {}'.format(s))

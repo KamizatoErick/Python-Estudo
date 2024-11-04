@@ -3,8 +3,8 @@
 
 import time
 
-n = int(input('Digite um valor: '))
-r = int(input('Digite a razão: ')) # pula de quanto em quanto
+n = int(input('Primeiro termo: '))
+r = int(input('Razão: ')) # pula de quanto em quanto
 
 a10 = n + (11 - 1) * r # formula para descobrir o 10° número
 

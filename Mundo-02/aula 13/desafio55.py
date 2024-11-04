@@ -5,7 +5,7 @@ peso = []
 
 # Lê os pesos
 for c in range(0,5):
-    pesoPessoa = int(input('Digite o peso da {}° pessoa: '.format(c+1)))
+    pesoPessoa = float(input('Digite o peso da {}° pessoa: '.format(c+1)))
     peso.append(pesoPessoa)
 
 # Variáveis
