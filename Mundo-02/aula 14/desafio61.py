@@ -5,14 +5,14 @@ import time
 
 n = int(input('Primeiro termo: '))
 r = int(input('Razão: ')) # pula de quanto em quanto
-
-a10 = n + (11 - 1) * r # formula para descobrir o 10° número
-
+termo = n
+cont = 1
 print('Começando do número {} e pulando de {} em {}...'.format(n,r,r))
-
 time.sleep(1)
 
-while n < a10:
-    print(n, end=' ')
-    n += r
+while cont <= 10:
+    print('{} -> '.format(termo), end='')
+    termo += r
+    cont += 1
+print('FIM')
    

@@ -11,17 +11,18 @@ a10 = n + (11 - 1) * r # formula para descobrir o 10° número
 print('Começando do número {} e pulando de {} em {}...'.format(n,r,r))
 
 while n < a10:
-    print(n, end=' ')
+    print('{} ->'.format(n), end=' ')
     n += r
-
+print('PAUSA')
 while True:
     novoTermo = int((input('\n\nDigite quantos termos a mais quer: ')))
     if novoTermo > 0:
         maisTermos = n + (novoTermo) * r
         print('\nMostrando mais {} termos:'.format(novoTermo))
         while n < maisTermos:
-            print(n, end=' ')
+            print('{} ->'.format(n), end=' ')
             n += r
+        print('PAUSA')
     else:
         break
 print('Volte sempre :)')

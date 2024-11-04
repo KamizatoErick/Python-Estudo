@@ -5,19 +5,22 @@
 
 import random
 
-n = 1
-p = 0
+acertou = False
+palpites = 0
 computador = random.randint(0,10)
 print('-='*29)
 print('Vou pensar em um número entre 0 e 10. Tente adivinhar...')
 print('-='*29)
 
-while n != 0:    
-    usuario = int(input('Em que número eu pensei? '))
-    p += 1
+while not acertou:    
+    usuario = int(input('\nEm que número eu pensei? '))
+    palpites += 1
 
     if computador == usuario:
-        print('Você acertou. Foram {} palpites.'.format(p))
-        n = 0
+        print('Você acertou. Foram {} palpites.'.format(palpites))
+        acertou = True
     else:
-        print('Você errou, tente novamente...')
+        if usuario < computador:
+            print('Errou... põe mais')
+        else:
+            print('Errou... põe menos')

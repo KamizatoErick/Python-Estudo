@@ -3,12 +3,7 @@
 # Caso esteja errado, peça a digitação novamente,
 # até ter um valor correto.
 
-n = 1
-while n != 0:
-    sexo = str(input('Digite o seu sexo: [M/F] ')).upper()[0].strip()
-    if sexo == 'M' or sexo == 'F':
-        n = 0
-    else:
-        print('Sexo inexistente, tente novamente.\n')
-
+sexo = str(input('Informe seu sexo: [M/F] ')).upper()[0].strip()
+while sexo not in 'MF':
+    sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ')).upper()[0].strip()
 print('Sexo {} registrado com sucesso.'.format(sexo))
