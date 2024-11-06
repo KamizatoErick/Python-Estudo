@@ -15,9 +15,10 @@ while True:
     escolha = ' '
     
     while escolha not in 'PI':
-        escolha = str(input('Par ou ímpar?[P/I] ')).upper().strip()[0]
+        escolha = str(input('Par ou Ímpar?[P/I] ')).upper().strip()[0]
     
-    print(f'Você jogou {usuario} e o computador {computador}. Total de {usuario+computador}')
+    print(f'Você jogou {usuario} e o computador {computador}. Total de {usuario+computador}', end='')
+    print(' DEU PAR' if (usuario+computador) % 2 == 0 else 'DEU ÍMPAR')
     print('-'*20)
     
     if escolha == 'P' and (usuario+computador) % 2 == 0:
