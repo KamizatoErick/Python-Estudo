@@ -19,6 +19,10 @@ while True:
         print('VOCÊ VENCEU!')
         print('Vamos jogar novamente...')
         vUsuario += 1
+    elif escolha == 'I' and (usuario+computador) % 2 == 1:
+        print('VOCÊ VENCEU!')
+        print('Vamos jogar novamente...')
+        vUsuario += 1
     else:
         break
 print('GAME OVER!')
