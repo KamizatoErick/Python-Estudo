@@ -12,10 +12,14 @@ while True:
     print('=-'*20)
     computador = random.randint(0,10)
     usuario = int(input('Diga um valor: '))
-    escolha = str(input('Par ou ímpar?[P/I] ')).upper().strip()[0]
+    escolha = ' '
+    
+    while escolha not in 'PI':
+        escolha = str(input('Par ou ímpar?[P/I] ')).upper().strip()[0]
     
     print(f'Você jogou {usuario} e o computador {computador}. Total de {usuario+computador}')
     print('-'*20)
+    
     if escolha == 'P' and (usuario+computador) % 2 == 0:
         print('VOCÊ VENCEU!')
         print('Vamos jogar novamente...')
