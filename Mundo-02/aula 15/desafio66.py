@@ -4,12 +4,12 @@
 # No final, mostre quantos números foram digitados e qual foi a soma
 # entre eles (Desconsiderando 999).
 
-count = soma = 0
+cont = soma = 0
 
 while True:
     n = int(input('Digite um valor (999 para parar): '))
     if n == 999:
         break
     soma += n
-    count += 1
-print(f'A soma dos {count} valores foi {soma}!')
+    cont += 1
+print(f'A soma dos {cont} valores foi {soma}!')
