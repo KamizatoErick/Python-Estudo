@@ -22,16 +22,13 @@ while True:
         precoMenor = preco
         produtoMenor = produto
     
-    while True:
+    opcao = ' '
+    while opcao not in 'SN':
         opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-        if opcao == 'S':
-            break
-        else:
-            opcao = 'sair'
-            break
-    if opcao == 'sair':
-        break
-
-print(f'Total gasto: {totalPreco}')
+    
+    if opcao == 'N':
+      break
+print('{:-^40}'.format(' FIM DO PROGRAMA '))
+print(f'Total gasto: R${totalPreco:.2f}')
 print(f'Temos {produtoMaiorMil} produtos custando mais de R$1000.00')
 print(f'O produto mais barato foi {produtoMenor} que custa {precoMenor:.2f}')

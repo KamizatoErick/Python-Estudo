@@ -4,7 +4,6 @@
 # Obs: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1
 
 c50 = c20 = c10 = c1 = 0
-
 valorSacar = int(input('Qual valor você quer sacar? R$'))
 while True:
     if valorSacar == 0:

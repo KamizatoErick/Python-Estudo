@@ -13,33 +13,28 @@ while True:
     print('---'*10)
 
     idade = int(input('Idade: '))
-    while True:            
+    sexo = ' '
+    while sexo not in 'MF':          
         sexo = str(input('Sexo: [M/F] ')).strip().upper()[0]
-        if sexo == 'M':
-            homem += 1
-            if idade > 18:
-                maiorIdade += 1
-            break
-        elif sexo == 'F':
-            mulher += 1
-            if idade > 18:
-                maiorIdade += 1
-            if idade < 20:
-                menorIdade += 1
-            break
-    while True:
+    if sexo == 'M':
+        homem += 1
+        if idade > 18:
+            maiorIdade += 1
+    elif sexo == 'F':
+        mulher += 1
+        if idade > 18:
+            maiorIdade += 1
+        if idade < 20:
+            menorIdade += 1
+    opcao = ' '
+    while opcao not in 'SN':
         opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-        if opcao == 'N':
-            terminar = True
-            break
-        if opcao == 'S':
-            terminar = False
-            break
-    if terminar == True:
+    if opcao == 'N':
         break
+    
 
 print('---'*3)
 print('Fim')
-print(f'Ao todo temos {maiorIdade} pessoas maiores de idade.')
+print(f'Ao todo temos {maiorIdade} pessoas maiores de 18 anos.')
 print(f'Temos {homem} homens.')
 print(f'Existem {menorIdade} mulheres com menos de 20 anos')
