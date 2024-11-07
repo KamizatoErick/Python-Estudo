@@ -6,14 +6,15 @@ from random import randint
 num = (randint(0,10),randint(0,10),randint(0,10),randint(0,10),randint(0,10))
 print(f'Valores sorteados: {num}')
 
-maior = 0
-for c in range(0, len(num)):
-    if num[c] > maior:
-        maior = num[c]
-    if c == 0:
-        menor = num[c]
-    if num[c] < menor:
-        menor = num[c]
+# Outra forma de descobrir maior e menor
+# maior = 0
+# for c in range(0, len(num)):
+#     if num[c] > maior:
+#         maior = num[c]
+#     if c == 0:
+#         menor = num[c]
+#     if num[c] < menor:
+#         menor = num[c]
 
-print(f'O maior valor sorteado foi {maior}')
-print(f'O menor valor sorteado foi {menor}')
+print(f'O maior valor sorteado foi {max(num)}')
+print(f'O menor valor sorteado foi {min(num)}')

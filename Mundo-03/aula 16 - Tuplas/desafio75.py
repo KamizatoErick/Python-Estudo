@@ -4,27 +4,17 @@
 # B) Em que posição foi digitado o primeiro valor 3.
 # C) Quais foram os números pares.
 
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite outro número: '))
-n3 = int(input('Digite mais um número: '))
-n4 = int(input('Digite o último número: '))
-num = (n1,n2,n3,n4)
+num = (int(input('Digite um número: ')),
+int(input('Digite outro número: ')),
+int(input('Digite mais um número: ')),
+int(input('Digite o último número: ')))
 
-numero9 = num.count(9)
-par = ()
-primeiro3 = 0
-
-# Põe o PAR na tupla 'par()'
-for c in range(0,len(num)):
-    if num[c] % 2 == 0:
-        par += (num[(c)],0)
-    if num[c] == 3:
-        primeiro3 = num.index(3)
-
-print(f'O número 9 apareceu {numero9} vezes')
-if primeiro3>0: print(f'O primeiro número 3 está na posição {primeiro3+1}')
-else: print('O número 3 não foi digitado')
-
+print(f'O número 9 apareceu {num.count(9)} vezes')
+if 3 in num:
+    print(f'O primeiro número 3 está na posição {num.index(3)+1}')
+else: 
+     print('O número 3 não foi digitado')
 print('Os valores pares digitados foram ',end='')
-for c in range(0,len(par),2):
-        print(par[c],end=' ')
+for n in num:
+     if n % 2 == 0:
+          print(n, end=' ')

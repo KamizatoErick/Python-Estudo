@@ -17,7 +17,11 @@ print(f'Os 4 últimos são {times[16:]}')
 print('=-=-'*22)
 print(f'Ordem Alfabética: {sorted(times)}')
 print('=-=-'*22)
-for c in range(0,len(times)):
-    if times[c] == 'Vasco da Gama':
-        print(f'O Vasco da Gama está na posição {c}')
-        break
+print(f'Vasco da Gama está na posição {times.index("Vasco da Gama")+1}') # posição está o primeiro 'Vasco da Gama'
+print('=-=-'*22)
+
+# Outra forma de ver o Vasco:
+# for c in range(0,len(times)):
+#     if times[c] == 'Vasco da Gama':
+#         print(f'O Vasco da Gama está na posição {c+1}')
+#         break

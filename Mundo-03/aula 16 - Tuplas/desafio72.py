@@ -6,14 +6,15 @@
 extenso = ('zero','um','dois','três','quatro','cinco','seis','sete','oito',
            'nove','dez','onze','doze','treze','quatorze','quinze','dezesseis',
            'dezessete','dezoito','dezenove','vinte')
-num = ''
-while True:
-    num = int(input('Digite um número entre 0 e 20: '))
-    if (num >= 0) and (num <= 20):
+while True: 
+    while True:
+        num = int(input('Digite um número entre 0 e 20: '))
+        if (num >= 0) and (num <= 20):
+            break
+    print(f'Você digitou o número {extenso[num]}!')
+    
+    opcao = ' '
+    while opcao not in 'SN':
+        opcao = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if opcao == 'N':
         break
-
-for c in range(0,21):
-    if num == c:
-        print(f'Você digitou o número {extenso[c]}!')
-        break
-        
