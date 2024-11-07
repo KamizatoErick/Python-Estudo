@@ -1,6 +1,0 @@
-par = ()
-print(par)
-par += (0,3,999)
-print(par)
-par += (1)
-print(par)
