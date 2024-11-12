@@ -14,7 +14,7 @@ for cont in range(0, len(expressao)):
     if ')' in expressao[cont]:
         fechou += 1
     
-if abriu == fechou:
+if abriu == fechou and expressao[0] != ')':
     print('A expressão está válida!')
 else:
     print('A expressão está errada!')

@@ -4,6 +4,8 @@
 # Ao final, mostre o conteúdo das três listas geradas.
 
 lista = []
+pares = []
+impares = []
 
 while True:
     lista.append(int(input('Digite um número: ')))
@@ -13,9 +15,6 @@ while True:
         opcao = str(input('Quer continuar? [S/N] ').strip().upper()[0])
     if opcao == 'N':
         break
-
-pares = []
-impares = []
 
 for v in lista:
     if v % 2 == 0:
