@@ -18,6 +18,7 @@ while True:
 print('=*'*20)
 
 print(f'Você digitou {len(lista)} valores')
+
 lista.sort(reverse=True)
 print(f'Os valores em ordem decrescente são {lista}')
 
