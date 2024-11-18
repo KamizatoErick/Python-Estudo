@@ -19,3 +19,5 @@ numeros[1].sort()
 
 print(f'Os valores pares digitados foram: {numeros[0]}')
 print(f'Os valores impares digitados foram: {numeros[1]}')
+
+# ...   
